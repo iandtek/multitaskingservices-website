@@ -1,11 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="en">
-	
-<!-- Mirrored from rockstheme.com/rocks/preview-cleanhome/order-from.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Feb 2020 18:47:21 GMT -->
+
 <head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Order From | Clean Home</title>
+		<title>Order From | Multi-Tasking Services</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -251,7 +250,7 @@
         				<!-- Start Order From -->
                         <div class="order-form">
                             <div class="row">
-                                <form id="contactForm" method="POST" action="http://rockstheme.com/rocks/preview-cleanhome/contact.php" class="contact-form">
+                                <form id="contactForm" method="POST" action="" onsubmit="handleForm()" class="contact-form">
 									<!-- single feilds -->
 									<div class="sign-feilds">
 										<div class="input-text">
@@ -263,7 +262,7 @@
 									<!-- single feilds -->
 									<div class="sign-feilds">
 										<div class="input-text">
-											<input type="email" class="email form-control width-50" id="eemail" placeholder="Email" required data-error="Please enter your email">
+											<input type="email" class="email form-control width-50" id="email" placeholder="Email" required data-error="Please enter your email">
 											<input type="text" class="address form-control width-50 last-name" id="phone" placeholder="Phone Number" required data-error="Please enter your address">
 											<div class="help-block with-errors"></div>
 										</div>
@@ -271,7 +270,7 @@
 									<!-- single feilds -->
 									<div class="sign-feilds">
 										<div class="input-text">
-											<select id="sel" class=" form-control width-50" name="select-services">
+											<select id="select-services" class=" form-control width-50" name="select-services">
 												<option value="0">select-services</option>
 												<option value="Residential Cleaning">Residential Cleaning</option>
 												<option value="Commercial Cleaning">Commercial Cleaning</option>
@@ -279,7 +278,7 @@
 												<option value="House Cleaning">House Cleaning</option>
 												<option value="Carpet Cleaning">Carpet Cleaning</option>
 											</select>
-											<select id="sele" class=" form-control width-50 last-name" name="select-member">
+											<select id="select-member" class=" form-control width-50 last-name" name="select-member">
 												<option value="0">How many person</option>
 												<option value="1">1 Person</option>
 												<option value="2">2 Person</option>
@@ -295,8 +294,8 @@
 									<div class="sign-feilds">
 										<div class="form-group form-control time-zone width-50">
 										    <p class="from-slogan">Select date when start work</p>
-											<div class="input-group date" id="datetimepicker1">
-												<input type='text' class="form-control" />
+											<div class="input-group date" id="start-date">
+												<input id="start-date-input" type='text' class="form-control" />
 												<span class="input-group-addon">
 													<i class="fa fa-calendar"></i>
 												</span>
@@ -304,8 +303,8 @@
 										</div>
 										<div class="form-group form-control time-zone width-50 last-name">
 										    <p class="from-slogan">Select time when start work</p>
-											<div class="input-group time" id="datetimepicker3">
-												<input type='text' class="form-control" />
+											<div class="input-group time" id="start-time">
+												<input id="start-time-input" type='text' class="form-control" />
 												<span class="input-group-addon">
 													<i class="fa fa-clock-o"></i>
 												</span>
@@ -453,7 +452,7 @@
                             <div class="copyright">
                                 <p>
                                     Copyright © 2018
-                                    <a href="#">Cleanhome</a> All Rights Reserved
+                                    <a href="#">Multi-Tasking Services</a> All Rights Reserved
                                 </p>
                             </div>
                         </div>
@@ -465,7 +464,7 @@
         
         
 		<!-- all js here -->
-
+        <script src="js/form-handler.js"></script>
 		<!-- jquery latest version -->
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 		<!-- bootstrap js -->
@@ -497,14 +496,14 @@
 		<script src="js/main.js"></script>
 		<script type="text/javascript">
             $(function () {
-                $('#datetimepicker1').datetimepicker();
+                $('#start-date').datetimepicker();
                 
-                $('#datetimepicker3').datetimepicker({
+                $('#start-time').datetimepicker({
                     format: 'LT'
                 });
             });
         </script>
 	</body>
 
-<!-- Mirrored from rockstheme.com/rocks/preview-cleanhome/order-from.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Feb 2020 18:47:35 GMT -->
+<!-- Mirrored from rockstheme.com/rocks/preview-Multi-Tasking Services/order-from.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Feb 2020 18:47:35 GMT -->
 </html>
