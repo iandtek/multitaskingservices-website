@@ -253,12 +253,12 @@
                         <div class="order-form">
                             <div class="row">
                                 <form id="contactForm" method="POST" action="" onsubmit="handleForm()" class="contact-form">
-									<!-- single feilds -->
-									<div class="sign-feilds">
+									<!-- single fields -->
+									<div class="sign-fields">
 										<div class="input-text">
 											<input type="text" id="name" class="form-control width-50" placeholder="Your Name" required data-error="Please enter your name">
-											<input type="text" class="form-control width-50 last-name" id="address" placeholder="Address" required data-error="Please enter your address">
-                                            <select id="city" class=" form-control width-50" name="select-services">
+											<input type="text" class="form-control width-50" id="address" placeholder="Address" required data-error="Please enter your address">
+                                            <select id="city" class=" form-control" name="select-services" required data-error="Please enter your city">
                                                 <option value="0">Select City</option>
                                                 <!-- Oregon -->
                                                 <optgroup label="Oregon">
@@ -281,19 +281,18 @@
                                                 </optgroup>
 											</select>
                                             <div class="help-block with-errors"></div>
-										</div>
+                                        </div>
+                                        <input type="email" class="email form-control width-50" id="email" placeholder="Email" required data-error="Please enter your email">
+                                        <input type="text" class="address form-control width-50" id="phone" placeholder="Phone Number" required data-error="Please enter your address">
+										<div class="help-block with-errors"></div>
 									</div>
-									<!-- single feilds -->
-									<div class="sign-feilds">
+									<!-- single fields -->
+									<div class="sign-fields">
 										<div class="input-text">
-											<input type="email" class="email form-control width-50" id="email" placeholder="Email" required data-error="Please enter your email">
-                                            <input type="text" class="address form-control width-50 last-name" id="phone" placeholder="Phone Number" required data-error="Please enter your address">
-                                            
-											<div class="help-block with-errors"></div>
 										</div>
 									</div>
-									<!-- single feilds -->
-									<div class="sign-feilds">
+									<!-- single fields -->
+									<div class="sign-fields">
 										<div class="input-text">
 											<select id="select-services" class="form-control width-50" name="select-services">
 												<option value="0">Select Type of Location</option>
@@ -305,7 +304,6 @@
                                                 <option value="Medical Offices">Medical Offices</option>
 												<option value="Carpet Cleaning">Spa</option>
                                             </select>
-                                            <div class="help-block with-errors"></div>
                                             <select id="select-services" class="form-control width-50" name="select-services">
 												<option value="0">What is the approcimate size of your location?</option>
 												<option value="0-2,499">0-2,499 sq ft</option>
@@ -316,7 +314,7 @@
                                                 <option value="not sure">Not sure</option>
                                             </select>
                                             <div class="help-block with-errors"></div>
-											<select id="select-member" class=" form-control width-50 last-name" name="select-member">
+											<select id="select-member" class=" form-control width-50" name="select-member">
 												<option value="0">How many workers?</option>
 												<option value="1">1 Person</option>
 												<option value="2">2 Person</option>
@@ -325,8 +323,7 @@
 												<option value="5">5 Person</option>
 												<option value="6">6 Person</option>
                                             </select>
-                                            <div class="help-block with-errors"></div>
-                                            <select id="select-frequency" class=" form-control width-50 last-name" name="select-member">
+                                            <select id="select-frequency" class=" form-control width-50" name="select-member">
 												<option value="0">How often do you need this service?</option>
 												<option value="Daily">Daily</option>
 												<option value="Two times per week">Two times per week</option>
@@ -337,15 +334,15 @@
                                             <div class="help-block with-errors"></div>
 										</div>
 									</div>
-									<!-- single feilds -->
-									<div class="sign-feilds">
+									<!-- single fields -->
+									<div class="sign-fields">
 										<div class="form-group form-control time-zone width-50">
 										    <p class="from-slogan">Select date when start work</p>
 											<div class="input-group date" id="start-date">
-												<input id="start-date-input" type='date' class="form-control" />
+												<input id="start-date-input" type='date' class="form-control"/>
 											</div>
 										</div>
-										<div class="form-group form-control time-zone width-50 last-name">
+										<div class="form-group form-control time-zone width-50">
 										    <p class="from-slogan">Select time when start work</p>
 											<div class="input-group time" id="start-time">
 												<input id="start-time-input" type='text' class="form-control" />
@@ -360,8 +357,8 @@
                                         <textarea id="message" rows="7" placeholder="Massage" class="form-control" required data-error="Write your message"></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
-									<!-- single feilds -->
-									<div class="sign-feilds">
+									<!-- single fields -->
+									<div class="sign-fields">
 										<div class="submit-btn">
 											<button type="submit" id="submit_btn" class="add-btn contact-btn">Order Now</button>
 											<div id="msg_Submit" class="h3 text-center hidden"></div>
@@ -514,7 +511,7 @@
                                     <p>
                                         We help agencies to define their new business objectives and then create the road map to get them there by devising a business.
                                     </p>
-                                    <div class="subs-feilds">
+                                    <div class="subs-fields">
                                         <div class="suscribe-input">
                                             <input type="email" class="email form-control width-80" id="sus_email" placeholder="Type Email">
                                             <button type="submit" id="sus_submit" class="add-btn">Subscribe</button>
