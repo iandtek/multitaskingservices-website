@@ -258,38 +258,83 @@
 										<div class="input-text">
 											<input type="text" id="name" class="form-control width-50" placeholder="Your Name" required data-error="Please enter your name">
 											<input type="text" class="form-control width-50 last-name" id="address" placeholder="Address" required data-error="Please enter your address">
-											<div class="help-block with-errors"></div>
+                                            <select id="city" class=" form-control width-50" name="select-services">
+                                                <option value="0">Select City</option>
+                                                <!-- Oregon -->
+                                                <optgroup label="Oregon">
+                                                    <option value="Tigard">Tigard</option>
+                                                    <option value="Beaverton">Beaverton</option>
+                                                    <option value="Lake Oswego">Lake Oswego</option>
+                                                    <option value="Tualatin">Tualatin</option>
+                                                    <option value="Sherwood">Sherwood</option>
+                                                    <option value="Hillsboro">Hillsboro</option>
+                                                    <option value="Clackamas">Clackamas</option>
+                                                    <option value="Happy Valley">Happy Valley</option>
+                                                    <option value="Gladstone">Gladstone</option>
+                                                    <option value="Milwaukie">Milwaukie</option>
+                                                    <option value="Portland">Portland</option>
+                                                </optgroup>
+                                                <!-- Washington State -->
+                                                <optgroup label="Washington State">
+                                                    <option value="Vancouver">Vancouver</option>
+                                                    <option value="Camas">Camas</option>
+                                                </optgroup>
+											</select>
+                                            <div class="help-block with-errors"></div>
 										</div>
 									</div>
 									<!-- single feilds -->
 									<div class="sign-feilds">
 										<div class="input-text">
 											<input type="email" class="email form-control width-50" id="email" placeholder="Email" required data-error="Please enter your email">
-											<input type="text" class="address form-control width-50 last-name" id="phone" placeholder="Phone Number" required data-error="Please enter your address">
+                                            <input type="text" class="address form-control width-50 last-name" id="phone" placeholder="Phone Number" required data-error="Please enter your address">
+                                            
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
 									<!-- single feilds -->
 									<div class="sign-feilds">
 										<div class="input-text">
-											<select id="select-services" class=" form-control width-50" name="select-services">
-												<option value="0">select-services</option>
-												<option value="Residential Cleaning">Residential Cleaning</option>
-												<option value="Commercial Cleaning">Commercial Cleaning</option>
-												<option value="Maid Services">Maid Services</option>
-												<option value="House Cleaning">House Cleaning</option>
-												<option value="Carpet Cleaning">Carpet Cleaning</option>
-											</select>
+											<select id="select-services" class="form-control width-50" name="select-services">
+												<option value="0">Select Type of Location</option>
+												<option value="Office Buildings">Office Buildings</option>
+												<option value="Fitness Centers & Gyms">Fitness Centers & Gyms</option>
+												<option value="Warehouse">Warehouse</option>
+												<option value="School">School</option>
+                                                <option value="Carpet Cleaning">Carpet Cleaning</option>
+                                                <option value="Medical Offices">Medical Offices</option>
+												<option value="Carpet Cleaning">Spa</option>
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                            <select id="select-services" class="form-control width-50" name="select-services">
+												<option value="0">What is the approcimate size of your location?</option>
+												<option value="0-2,499">0-2,499 sq ft</option>
+												<option value="2,500-4,999">2,500-4,999 sq ft</option>
+												<option value="5,000-9,999">5,000-9,999 sq ft</option>
+												<option value="10,000-49,999">10,000-49,999 sq ft</option>
+                                                <option value=">50,000">More than 50,000 sq ft</option>
+                                                <option value="not sure">Not sure</option>
+                                            </select>
+                                            <div class="help-block with-errors"></div>
 											<select id="select-member" class=" form-control width-50 last-name" name="select-member">
-												<option value="0">How many person</option>
+												<option value="0">How many workers?</option>
 												<option value="1">1 Person</option>
 												<option value="2">2 Person</option>
 												<option value="3">3 Person</option>
 												<option value="4">4 Person</option>
 												<option value="5">5 Person</option>
 												<option value="6">6 Person</option>
-											</select>
-											<div class="help-block with-errors"></div>
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                            <select id="select-frequency" class=" form-control width-50 last-name" name="select-member">
+												<option value="0">How often do you need this service?</option>
+												<option value="Daily">Daily</option>
+												<option value="Two times per week">Two times per week</option>
+												<option value="Weekly">Weekly</option>
+												<option value="Two times per month">Two times per month</option>
+												<option value="Other">Other - not sure</option>
+                                            </select>
+                                            <div class="help-block with-errors"></div>
 										</div>
 									</div>
 									<!-- single feilds -->
@@ -297,10 +342,7 @@
 										<div class="form-group form-control time-zone width-50">
 										    <p class="from-slogan">Select date when start work</p>
 											<div class="input-group date" id="start-date">
-												<input id="start-date-input" type='text' class="form-control" />
-												<span class="input-group-addon">
-													<i class="fa fa-calendar"></i>
-												</span>
+												<input id="start-date-input" type='date' class="form-control" />
 											</div>
 										</div>
 										<div class="form-group form-control time-zone width-50 last-name">
