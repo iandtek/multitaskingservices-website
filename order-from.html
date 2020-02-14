@@ -283,7 +283,7 @@
                                             <div class="help-block with-errors"></div>
                                         </div>
                                         <input type="email" class="email form-control width-50" id="email" placeholder="Email" required data-error="Please enter your email">
-                                        <input type="text" class="address form-control width-50" id="phone" placeholder="Phone Number" required data-error="Please enter your address">
+                                        <input type="text" class="form-control width-50" id="phone" placeholder="Phone Number" required data-error="Please enter your Phone Number">
 										<div class="help-block with-errors"></div>
 									</div>
 									<!-- single fields -->
@@ -294,18 +294,18 @@
 									<!-- single fields -->
 									<div class="sign-fields">
 										<div class="input-text">
-											<select id="select-services" class="form-control width-50" name="select-services">
+											<select id="select-services" class="form-control width-50" name="select-services" required data-error="Please enter your type of location">
 												<option value="0">Select Type of Location</option>
 												<option value="Office Buildings">Office Buildings</option>
 												<option value="Fitness Centers & Gyms">Fitness Centers & Gyms</option>
 												<option value="Warehouse">Warehouse</option>
 												<option value="School">School</option>
-                                                <option value="Carpet Cleaning">Carpet Cleaning</option>
                                                 <option value="Medical Offices">Medical Offices</option>
-												<option value="Carpet Cleaning">Spa</option>
+                                                <option value="Financial Entities">Financial Entities (Bank)</option>
+												<option value="Real State Staging">Real State Staging</option>
                                             </select>
                                             <select id="select-services" class="form-control width-50" name="select-services">
-												<option value="0">What is the approcimate size of your location?</option>
+												<option value="0">Size of your location?</option>
 												<option value="0-2,499">0-2,499 sq ft</option>
 												<option value="2,500-4,999">2,500-4,999 sq ft</option>
 												<option value="5,000-9,999">5,000-9,999 sq ft</option>
@@ -327,7 +327,8 @@
 												<option value="0">How often do you need this service?</option>
 												<option value="Daily">Daily</option>
 												<option value="Two times per week">Two times per week</option>
-												<option value="Weekly">Weekly</option>
+                                                <option value="Weekly">Weekly</option>
+                                                <option value="Montly">Monhly</option>
 												<option value="Two times per month">Two times per month</option>
 												<option value="Other">Other - not sure</option>
                                             </select>
