@@ -36,7 +36,9 @@
 		<link rel="stylesheet" href="css/responsive.css">
 
 		<!-- modernizr css -->
-		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- Print PDF -->
+        <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
 	</head>
 		<body>
 
@@ -319,7 +321,7 @@
 									<!-- single feilds -->
 									<div class="sign-feilds">
 										<div class="submit-btn">
-											<button type="submit" id="submit_mg" class="add-btn contact-btn">Order Now</button>
+											<button type="submit" id="submit_btn" class="add-btn contact-btn">Order Now</button>
 											<div id="msg_Submit" class="h3 text-center hidden"></div>
 										</div>
 									</div>
@@ -331,6 +333,45 @@
         		</div>
         	</div>
         </div>
+        <!-- Invoice -->
+        <div class="container" style="display:none" id="invoice">
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 border">
+                <div class="row">
+                    <br>
+                  <div class="col-md-12 invoice text-center text-primary">
+                    <h2>Invoice</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-right">
+                    <!-- <p><strong>Invoice No: </strong> 12345</p> -->
+                    <p><strong>Name:</strong> <span id="name"></span></p>
+                    <p><strong>Date of Invoice:</strong> <span id="date_of_invoice"></span></p>
+                    <p><strong>Date of Service:</strong> <span id="date_of_service"></span></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 well invoice-body">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Services</th>
+                          <th>Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody id="table_body">
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-11 text-right mt-2 mb-2">Signature</div>
+                </div>
+              </div>
+            </div>
+          </div>
         <!-- Start Banner Area -->
         <div class="banner-area">
             <div class="container">
