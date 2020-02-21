@@ -186,64 +186,64 @@ preloader
 /*----------------------------
     Contact form
 ------------------------------ */
-	$("#contactForm").on("submit", function (event) {
-		if (event.isDefaultPrevented()) {
-			formError();
-			submitMSG(false, "Did you fill in the form properly?");
-		} else {
-			event.preventDefault();
-			submitForm();
-		}
-	});
-	function submitForm(){
-		var name = $("#name").val();
-		var email = $("#eemail").val();
-		var msg_subject = $("#msg_subject").val();
-		var message = $("#message").val();
-		var phone = $("#phone").val();
-		var selecttext = $('#contactForm select').find(":selected").text();
-		var address='',
-			sel='',
-			sele='',
-			datetimepicker1='',
-			datetimepicker3='';
+	// $("#contactForm").on("submit", function (event) {
+	// 	if (event.isDefaultPrevented()) {
+	// 		formError();
+	// 		submitMSG(false, "Did you fill in the form properly?");
+	// 	} else {
+	// 		event.preventDefault();
+	// 		submitForm();
+	// 	}
+	// });
+	// function submitForm(){
+	// 	var name = $("#name").val();
+	// 	var email = $("#eemail").val();
+	// 	var msg_subject = $("#msg_subject").val();
+	// 	var message = $("#message").val();
+	// 	var phone = $("#phone").val();
+	// 	var selecttext = $('#contactForm select').find(":selected").text();
+	// 	var address='',
+	// 		sel='',
+	// 		sele='',
+	// 		datetimepicker1='',
+	// 		datetimepicker3='';
 			
-		if( $('#address').length )  
-		{
-			var address= $("#address").val();
-		}
-		if( $('#sel').length )  
-		{
-			var sel= $("#sel").val();
-		}
-		if( $('#sele').length )  
-		{
-			var sele= $("#sele").val();
-		}
-		if( $('#datetimepicker1').length )  
-		{
-			var datetimepicker1= $("#datetimepicker1 input").val();
-		}
-		if( $('#datetimepicker3').length )  
-		{
-			var datetimepicker3= $("#datetimepicker3 input").val();
-		}
+	// 	if( $('#address').length )  
+	// 	{
+	// 		var address= $("#address").val();
+	// 	}
+	// 	if( $('#sel').length )  
+	// 	{
+	// 		var sel= $("#sel").val();
+	// 	}
+	// 	if( $('#sele').length )  
+	// 	{
+	// 		var sele= $("#sele").val();
+	// 	}
+	// 	if( $('#datetimepicker1').length )  
+	// 	{
+	// 		var datetimepicker1= $("#datetimepicker1 input").val();
+	// 	}
+	// 	if( $('#datetimepicker3').length )  
+	// 	{
+	// 		var datetimepicker3= $("#datetimepicker3 input").val();
+	// 	}
 
 
-		$.ajax({
-			type: "POST",
-			url: "assets/contact.php",
-			data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message+ "&phone=" + phone+ "&selecttext=" + selecttext+ "&address=" + address+ "&sel=" + sel+ "&sele=" + sele+ "&datetimepicker1=" + datetimepicker1+ "&datetimepicker3=" + datetimepicker3,
-			success : function(text){
-				if (text === "success"){
-					formSuccess();
-				} else {
-					formError();
-					submitMSG(false,text);
-				}
-			}
-		});
-	}
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "assets/contact.php",
+	// 		data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message+ "&phone=" + phone+ "&selecttext=" + selecttext+ "&address=" + address+ "&sel=" + sel+ "&sele=" + sele+ "&datetimepicker1=" + datetimepicker1+ "&datetimepicker3=" + datetimepicker3,
+	// 		success : function(text){
+	// 			if (text === "success"){
+	// 				formSuccess();
+	// 			} else {
+	// 				formError();
+	// 				submitMSG(false,text);
+	// 			}
+	// 		}
+	// 	});
+	// }
 
 	function formSuccess(){
 		$("#contactForm")[0].reset();
