@@ -56,6 +56,9 @@
 /*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
 html, body {
 	height: 100%;
 }
@@ -146,7 +149,7 @@ body {
 	font-size: 15px;
 	text-align: left;
 	overflow-x: hidden;
-	line-height: 22px;
+    line-height: 22px;
 }
 #scrollUp {
   background: #086FB3 none repeat scroll 0 0;
