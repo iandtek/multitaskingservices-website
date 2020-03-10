@@ -269,11 +269,3 @@ preloader
 
 })(jQuery); 
 
-
-var datefield = document.getElementById("datetimepicker1");
-
-if (datefield.type != "date"){ //if browser doesn't support input type="date", initialize date picker widget:
-    $(document).ready(function() {
-        $('#datetimepicker1').datepicker();
-    }); 
-}  
