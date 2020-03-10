@@ -331,7 +331,7 @@
                                                 <option value="not sure">Not sure</option>
                                             </select>
                                             <div class="help-block with-errors"></div>
-											<select id="select-member" class="form-control width-50" name="workers">
+											<!-- <select id="select-member" class="form-control width-50" name="workers">
 												<option value="" selected disabled hidden>How many workers?</option>
 												<option value="1">1 Person</option>
 												<option value="2">2 Person</option>
@@ -339,7 +339,7 @@
 												<option value="4">4 Person</option>
 												<option value="5">5 Person</option>
 												<option value="6">6 Person</option>
-                                            </select>
+                                            </select> -->
                                             <select id="select-frequency" class="form-control width-50" name="frequency">
 												<option value="" selected disabled hidden>How often do you need this service?</option>
 												<option value="Daily">Daily</option>
@@ -356,13 +356,22 @@
 									<!-- single fields -->
 									<div class="sign-fields">
 										<div class="form-group form-control time-zone width-50">
-										    <p class="from-slogan">Select date when start work</p>
+										    <p class="from-slogan">Select date of the inspection work</p>
 											<div class="input-group date-class" id="start-date-group">
-												<input type='date' name="start-date" class="form-control"/>
-											</div>
+                                                <input type='date' name="date-of-inspection" class="form-control" placeholder="yyyy-mm-dd"/>
+                                                <span class="input-group-addon">
+													<i class="fa fa-calendar"></i>
+												</span>
+                                            </div>
+                                            <!-- <div class="input-group date" id="datetimepicker1">
+												<input type="text" class="form-control" placeholder="yyyy-mm-dd">
+												<span class="input-group-addon">
+													<i class="fa fa-calendar"></i>
+												</span>
+											</div> -->
 										</div>
 										<div class="form-group form-control time-zone width-50">
-										    <p class="from-slogan">Select time when start work</p>
+										    <p class="from-slogan">Select time of the inspection</p>
 											<div class="input-group time" id="start-time">
 												<input id="start-time-input" name="start-time" type='text' class="form-control" />
 												<span class="input-group-addon">
@@ -373,7 +382,7 @@
 										<div class="help-block with-errors"></div>
 									</div>
 									<div class="form-group">
-                                        <textarea id="message" rows="7" placeholder="Massage" class="form-control" required data-error="Write your message"></textarea>
+                                        <textarea id="message" rows="7" placeholder="Message" class="form-control" required data-error="Write your message"></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
 									<!-- single fields -->
@@ -436,9 +445,9 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-content">
-                            <h4>Are you looking for professional Cleaning Services for your House?</h4>
+                            <h4>Are you looking for professional Cleaning Services for your Bussiness?</h4>
                             <div class="banner-contact">
-                                <span class="call-us"><i class="icon icon-phone-handset"></i>Call us:  +1313-4325432 </span><span>Or</span>
+                                <span class="call-us"><i class="icon icon-phone-handset"></i>Call us:  +1 (503) 481 5407 </span><span>Or</span>
                                 <a class="banner-btn" href="#">Contact us</a>
                             </div>
                         </div>

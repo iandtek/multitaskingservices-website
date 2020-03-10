@@ -220,10 +220,10 @@ preloader
 	// 	{
 	// 		var sele= $("#sele").val();
 	// 	}
-	// 	if( $('#datetimepicker1').length )  
-	// 	{
-	// 		var datetimepicker1= $("#datetimepicker1 input").val();
-	// 	}
+		// if( $('#datetimepicker1').length )  
+		// {
+		// 	var datetimepicker1= $("#datetimepicker1 input").val();
+		// }
 	// 	if( $('#datetimepicker3').length )  
 	// 	{
 	// 		var datetimepicker3= $("#datetimepicker3 input").val();
@@ -268,3 +268,12 @@ preloader
 
 
 })(jQuery); 
+
+
+var datefield = document.getElementById("datetimepicker1");
+
+if (datefield.type != "date"){ //if browser doesn't support input type="date", initialize date picker widget:
+    $(document).ready(function() {
+        $('#datetimepicker1').datepicker();
+    }); 
+}  
