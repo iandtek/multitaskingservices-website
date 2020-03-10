@@ -1,0 +1,30 @@
+                <div class="intro-content">
+                    <div class="slider-images">
+                        <img src="img/slider/s2.jpg" alt="">
+                    </div>
+                    <div class="slider-content">
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <!-- layer 1 -->
+                                            <div class="layer-1">
+                                                <h1 class="title2"><span class="color">Multi-tasking Services</span> company is provides services</h1>
+                                            </div>
+                                            <!-- layer 2 -->
+                                            <div class="layer-2 ">
+                                                <p>A Cleaning company services is provides professional services.</p>
+                                            </div>
+                                            <!-- layer 3 -->
+                                            <div class="layer-3">
+                                                <a id="our-services" href="#our-services" class="ready-btn left-btn" >Our Services</a>
+                                                <a href="order-from.html" class="ready-btn right-btn" >Book now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
